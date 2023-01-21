@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="layout.css">
     </head>
-    <body>
-        <form action="/form-handling-url" method="post">
-            <fieldset>
-            <legend>Add user</legend>
-        
-            <div>
+    <body style = "background-color: aliceblue;">
+        <form action="/form-handling-url" method="post" class="main_parent">
+            <fieldset class="parent">
+            <legend class="header">Add user</legend>
+
+            <div class="child">
                 <label for="firstName">First name</label>
                 <input type="text" id="firstName" name="first_name">
             </div>
-        
-            <div>
+
+            <div class="child">
                 <label for="lastName">Last name</label>
                 <input type="text" id="lastName" name="last_name">
             </div>
-        
-            <div>
+
+            <div class="child">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email_address">
             </div>
-        
-            <div>
+
+            <div class="child status">
                 <label for="role">Status</label>
                 <select id="role" name="user_role_name">
                 <option value="student">Student</option>
@@ -31,8 +32,8 @@
                 <option value="guest">Guest</option>
                 </select>
             </div>
-            
-            <div>
+
+            <div class="child choice">
                 <p>Choose your favorite Web language:</p>
                 <input type="radio" id="html" name="fav_language" value="HTML">
                 <label for="html">HTML</label><br>
@@ -42,28 +43,31 @@
                 <label for="javascript">JavaScript</label>
             </div>
 
-            <div>
+            <div class="child comments">
                 <label for="comments">Comments</label>
                 <textarea id="comments" name="comments"></textarea>
             </div>
 
-            <div>
+            <div class="child date">
                 <label for="date">Date</label>
                 <input type="date" id="date" name="date">
             </div>
 
-            <div>
+            <div class="child checkbox">
                 <input type="checkbox" id="signup" name="signup" value="Signup">
                 <label for="signup">Sign up for news letter</label><br>
                 <input type="checkbox" id="terms" name="terms" value="Terms">
                 <label for="terms"> Agree to terms and conditions</label>
             </div>
-        
-            <div>
+
+            <div class="child button">
                 <button type="submit">Submit</button>
             </div>
-        
+
             </fieldset>
         </form>
+        <div id="animate">
+        <img id="imagesize" src="wp1894045-dodge-car-wallpapers.jpg">
+        </div>
     </body>
 </html>
